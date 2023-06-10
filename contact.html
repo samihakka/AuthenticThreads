@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact Us </title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="keywords" content="jerseys, professional, sports, children, adults, gift">
+    <meta charset="utf-8">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .field {
+            display: block;
+            width: 300px;
+            font-size: 20px;
+        }
+        #submit {
+            margin: 20px;
+        }
+    </style>
+    <script>
+        function alertUser() {
+            if (document.getElementsByName("email")[0].value == "") {
+                alert("You must input an email");
+            }
+            else {
+                alert("Your message has been submitted. We will get back to you as soon as possible!");
+            }
+        }
+    </script>
+</head>
+<header>
+
+    <a href="https://clarkbolin.github.io/midterm/index"><img style="width: 75px; height: 75px; float: left; margin: 10px;" src="images/logo.png" alt="Logo">
+    </a>
+    <h1 style="width: 100%">Contact Us</h1>
+
+</header>
+
+<nav>
+    <div id=back style="background-color: rgb(214, 214, 252)">
+
+        <ul>
+            <li><a href="https://clarkbolin.github.io/midterm/contact">Contact</a></li>
+            <li><a href="https://clarkbolin.github.io/midterm/about">About</a></li>
+            <li><a href="https://clarkbolin.github.io/midterm/catalog"> Catalog </a></li>
+            <li><a href="https://clarkbolin.github.io/midterm/midterm_cart"> Cart </a></li>
+            <li><a href="https://clarkbolin.github.io/midterm/midterm_locations"> Locations/Hrs </a></li>    
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div id=back2 style="background-color: rgb(214, 214, 252);">
+
+        <h2>
+            We'd Love to Hear From You!
+            <br>
+        </h2>
+        <br>
+
+        <form>
+            <div class="container">
+                <label>First Name:</label> <input class="field" type="text" name='fname' />
+                <label>Last Name:</label> <input class="field" type="text" name='lname' />
+                <label>Email: * </label> <input class="field" type="text" name='email' />
+                <label>Phone:</label> <input class="field" type="text" name='phone' />
+                <label>Your Message:</label> <textarea class="field" style="resize: none; height: 200px;"></textarea>
+                <input id="submit" type="button" value="Submit" onclick="alertUser()" />
+            </div>
+        </form>
+        <br />
+    </div>
+
+    <footer> Thanks for Visiting Us! <br>
+
+        <a href=#topofPage target="_blank"> Top Of Page</a>
+
+
+        </div>
+        <br><br>
+    </footer>
+
+</body>
+
+</html>
